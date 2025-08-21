@@ -1,0 +1,93 @@
+To create a website using HTML and CSS, you can use a web.css file to style your webpage. Below is an example of how you can structure your CSS file and link it to your HTML file.
+
+Sample web.css File
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #575757;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+HTML File to Link web.css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  <header>
+    Welcome to My Website
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <h1>Hello, World!</h1>
+    <p>This is a simple webpage styled with CSS.</p>
+  </main>
+  <footer>
+    &copy; 2025 My Website. All rights reserved.
+  </footer>
+</body>
+</html>
+
+
+How It Works
+
+Linking CSS: The <link> tag in the <head> section connects the web.css file to your HTML.
+Styling: The web.css file defines styles for the body, header, navigation bar, main content, and footer.
+Responsive Design: The meta tag ensures the page is mobile-friendly.
+
+Feel free to modify the styles (e.g., colors, fonts, layout) to suit your design preferences!
